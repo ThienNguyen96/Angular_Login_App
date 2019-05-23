@@ -1,0 +1,106 @@
+.panel.panel-success.panel--custom {
+    width: 100%;
+    border: none;
+    height: auto;
+    padding:30px;
+}
+.panel-success>.panel-heading {
+    color: #000;
+    background-color: #ffffff;
+    border-color: #2d90a2;
+}
+
+h3.panel-title {
+    font-size: 40px;
+    font-weight: bold;
+}
+p.panel--des {
+    margin: 10px 0px;
+}
+input.form-control.input--custom {
+    border-radius: 0px;
+    border: none;
+    border-bottom: 1px solid #ada3a3;
+    margin:30px 0px;
+}
+input.form-control.input--custom:focus{
+    outline: none;
+    box-shadow: none;
+    border-bottom: 2px solid #000;
+    transition: .3s;
+}
+input.form-control.input--custom::-webkit-input-placeholder {
+    color: #483c3cb3;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+button.btn.btn-primary.btn--custom {
+    border: none;
+    background: linear-gradient(-90deg, #ec3f5d, #8888ff);
+    padding: 10px 40px;
+    font-size: 19px;
+    position: relative;
+}
+button.btn.btn-primary.btn--custom:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #e63986;
+    left: 0px;
+    opacity: 0;
+    transform: scale(0.8);
+    border-radius: 24px;
+    animation: scale 2s infinite;
+}
+@keyframes scale{
+    0%{
+        transform: scale(1);
+        opacity: 0.6;
+    }
+    100%{
+        transform: scale(1.4);
+        opacity: 0;
+    }
+}
+
+
+/* css login */
+
+.wrapper__left {
+    width: 100%;
+    height: 500px;
+    background-image:url(https://images.unsplash.com/photo-1503614472-8c93d56e92ce?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c534491283f20fb61821c7f423463564&auto=format&fit=crop&w=999&q=80);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.col-xs-12.col-sm-6.col-md-6.col-lg-6.col--custom {
+    padding: 0px;
+    margin: 0px;
+}
+h1.left__h1 {
+    margin: 0px;
+    color: #fff;
+    font-size: 62px;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    padding: 95px 0px;
+}
+
+.wrapper__right {
+    width: 100%;
+    height: 500px;
+    background-color:#fff;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+@media (max-width:767px){
+    .wrapper__right {
+        border-radius: 15px;
+    }
+    .wrapper__left{
+        border-radius: 15px;
+    }
+}
